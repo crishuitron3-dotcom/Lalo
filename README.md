@@ -158,3 +158,20 @@ footer {
     background-color: #333;
     color: white;
 }
+document.addEventListener('DOMContentLoaded', () => {
+    const formulario = document.getElementById('formulario-contacto');
+
+    formulario.addEventListener('submit', (evento) => {
+        evento.preventDefault(); // Evita que la página se recargue
+
+        // Puedes recoger los datos del formulario si lo necesitas
+        const nombre = document.getElementById('nombre').value;
+        const email = document.getElementById('email').value;
+        const mensaje = document.getElementById('mensaje').value;
+
+        // Aquí podrías enviar los datos a un servidor, pero por ahora solo mostraremos un mensaje
+        alert(`¡Gracias por tu mensaje, ${nombre}! Nos pondremos en contacto contigo pronto.`);
+        
+        formulario.reset(); // Limpia los campos del formulario
+    });
+});
