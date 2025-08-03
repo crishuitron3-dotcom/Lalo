@@ -1,5 +1,73 @@
 # Lalo
 Ventas
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Negocio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenidos a Mi Negocio</h1>
+        <p>Descubre nuestros increíbles productos.</p>
+    </header>
+
+    <main>
+        <section id="galeria">
+            <h2>Nuestros Productos</h2>
+            <div class="galeria-fotos">
+                <img src="https://via.placeholder.com/150" alt="Producto 1">
+                <img src="https://via.placeholder.com/150" alt="Producto 2">
+                <img src="https://via.placeholder.com/150" alt="Producto 3">
+                </div>
+        </section>
+
+        <section id="precios">
+            <h2>Lista de Precios</h2>
+            <ul class="lista-precios">
+                <li>
+                    <span>Producto A</span>
+                    <span>$10.00</span>
+                </li>
+                <li>
+                    <span>Producto B</span>
+                    <span>$25.50</span>
+                </li>
+                <li>
+                    <span>Producto C</span>
+                    <span>$5.99</span>
+                </li>
+                </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="formulario-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Negocio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
 body {
     font-family: sans-serif;
     margin: 0;
